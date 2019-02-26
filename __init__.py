@@ -27,7 +27,7 @@ def create_app(config_name=None):
     if config_name is None:
         config_name = os.getenv('FLASK_CONFIG', 'development')
 
-    app = Flask('__name__')
+    app = Flask('untitled9')
     app.config.from_object(config[config_name])
 
 
@@ -155,6 +155,3 @@ def register_commands(app):
         if os.system('pybabel compile -d todoism/translations'):
             raise RuntimeError('compile command failed')
 
-
-if __name__ == '__main__':
-    create_app()
