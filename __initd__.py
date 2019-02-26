@@ -157,4 +157,9 @@ def register_commands(app):
 
 
 if __name__ == '__main__':
-    create_app()
+    a=create_app()
+    a.app.run(
+        host='0,0,0,0',
+        port=30003,
+        debug=True
+    )
