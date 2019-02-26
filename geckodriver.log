@@ -1804,3 +1804,4 @@ console.error: BroadcastService:
 
 
 (/usr/lib/firefox/firefox:19344): dconf-WARNING **: 17:12:43.024: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript error: resource://gre/modules/PushServiceWebSocket.jsm, line 309: NS_ERROR_NOT_CONNECTED: Component returned failure code: 0x804b000c (NS_ERROR_NOT_CONNECTED) [nsIWebSocketChannel.sendMsg]
