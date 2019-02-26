@@ -35,6 +35,11 @@ def create_app(config_name=None):
     register_blueprints(app)
     register_commands(app)
     print("ok")
+    app.run(
+        host='0,0,0,0',
+        port=30003,
+        debug=True
+    )
 
 
 
@@ -155,11 +160,3 @@ def register_commands(app):
         if os.system('pybabel compile -d todoism/translations'):
             raise RuntimeError('compile command failed')
 
-
-if __name__ == '__main__':
-    a=create_app()
-    a.app.run(
-        host='0,0,0,0',
-        port=30003,
-        debug=True
-    )
